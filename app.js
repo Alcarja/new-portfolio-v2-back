@@ -13,11 +13,7 @@ const app = express();
 
 app.use(cookieParser());
 
-const allowedOrigins = [
-  "http://localhost:3000",
-  "http://46.225.161.233",
-  "https://luisfotonature.com",
-];
+const allowedOrigins = ["http://localhost:3000", "http://116.203.109.157"];
 
 const corsOptions = {
   origin: (origin, callback) => {
